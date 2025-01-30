@@ -26,7 +26,7 @@ Kode berikut dibuat untuk berjalan otomatis di **MT4 dan MT5**.
 ```mql4
 //+------------------------------------------------------------------+
 //| Expert Advisor: MA Crossover for XAUUSD (MT4)                   |
-//| Author Didit Farafat                                
+//| Author Didit Farafat           |                 
 //+------------------------------------------------------------------+
 #property strict
 
