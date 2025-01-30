@@ -208,9 +208,85 @@ void OnTick() {
 
 ---
 
-### **Cara Menggunakan:**
-1. **Simpan file di folder `Experts` sesuai platform (`MQL4` atau `MQL5`).**  
-2. **Buka MT4/MT5**, masuk ke `Navigator > Expert Advisors`, lalu `Refresh`.  
-3. **Tarik EA ke chart XAU/USD H1** dan pastikan `Algo Trading` aktif.  
+## **Cara Menggunakan Robot Trading MA Crossover untuk XAU/USD (MT4 & MT5)**  
 
-Sekarang robot akan berjalan otomatis berdasarkan strategi MA5 dan MA9!
+### **1. Persiapan Awal**  
+Pastikan Anda sudah memiliki:  
+✅ **MetaTrader 4 atau MetaTrader 5** terinstal.  
+✅ **Akun trading** di broker yang mendukung MT4/MT5.  
+✅ **Koneksi internet stabil** untuk eksekusi otomatis.  
+
+---
+
+### **2. Instalasi Robot Trading (EA)**
+1. **Buka MetaTrader 4 atau MetaTrader 5.**  
+2. **Masuk ke Folder Expert Advisors:**  
+   - Klik **`File > Open Data Folder`**  
+   - Masuk ke folder **`MQL4/Experts`** (untuk MT4) atau **`MQL5/Experts`** (untuk MT5).  
+3. **Copy file EA sesuai platform:**  
+   - Untuk **MT4** → `XAUUSD_MA_Strategy.mq4`  
+   - Untuk **MT5** → `XAUUSD_MA_Strategy.mq5`  
+4. **Restart MetaTrader** agar EA terdeteksi.  
+
+---
+
+### **3. Menjalankan EA di Chart XAU/USD**
+1. **Buka Chart XAU/USD dengan Timeframe H1.**  
+2. **Aktifkan EA di Navigator:**  
+   - Di panel kiri, buka **`Navigator > Expert Advisors`**.  
+   - Klik kanan **`XAUUSD_MA_Strategy`** lalu pilih **"Attach to Chart"**.  
+3. **Aktifkan Trading Otomatis:**  
+   - Klik tombol **`Algo Trading`** (MT5) atau **`AutoTrading`** (MT4) di toolbar.  
+   - Pastikan ikon berubah menjadi hijau.  
+
+---
+
+### **4. Pengaturan Parameter EA**
+Setelah EA di-attach ke chart, akan muncul jendela pengaturan.  
+Anda bisa menyesuaikan parameter seperti:  
+- **MA Fast Period** → `5` (default)  
+- **MA Slow Period** → `9` (default)  
+- **Lot Size** → `0.1` (default, bisa diubah sesuai manajemen risiko)  
+
+Klik **OK** untuk menjalankan EA.  
+
+---
+
+### **5. Cara Kerja Robot Trading**
+📌 **Entry Buy:**  
+- Jika **MA5 melintasi MA9 dari bawah ke atas**, EA akan membuka posisi **BUY**.  
+
+📌 **Exit Buy:**  
+- Jika **MA5 melintasi MA9 dari atas ke bawah**, EA akan **menutup posisi BUY**.  
+
+📌 **Entry Sell:**  
+- Jika **MA5 melintasi MA9 dari atas ke bawah**, EA akan membuka posisi **SELL**.  
+
+📌 **Exit Sell:**  
+- Jika **MA5 melintasi MA9 dari bawah ke atas**, EA akan **menutup posisi SELL**.  
+
+---
+
+### **6. Monitoring dan Optimasi**
+- **Pantau trade di tab `Trade`** di MT4/MT5.  
+- **Gunakan fitur `Strategy Tester`** untuk backtesting di data historis.  
+- **Lakukan optimasi parameter MA** untuk menyesuaikan dengan kondisi market.  
+
+---
+
+### **7. Troubleshooting**
+❌ **EA tidak berjalan?**  
+✔ Pastikan tombol **`Algo Trading`** (MT5) atau **`AutoTrading`** (MT4) aktif.  
+✔ Cek di tab `Experts` atau `Journal` untuk error log.  
+
+❌ **Tidak ada order terbuka?**  
+✔ Pastikan spread broker tidak terlalu besar.  
+✔ Coba ubah **lot size** atau **periode MA** di pengaturan EA.  
+
+---
+
+### **8. Kesimpulan**
+Dengan mengikuti langkah-langkah di atas, **robot trading otomatis akan bekerja di XAU/USD (gold) pada timeframe H1.**  
+Anda bisa mengoptimalkan strategi ini dengan **pengujian backtest** dan **menyesuaikan setting** sesuai preferensi trading Anda.  
+
+🚀 **Selamat trading dengan EA XAU/USD MA Crossover!**
