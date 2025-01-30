@@ -1,5 +1,5 @@
 # Robot Trading Otomatis Untuk XAUUSD(H1)
-Untuk membuat robot trading otomatis (Expert Advisor) di **MetaTrader 4 (MT4) dan MetaTrader 5 (MT5)**, kita akan menggunakan bahasa **MQL4/MQL5**. Robot ini akan:  
+Ini adalah robot trading otomatis (Expert Advisor) di **MetaTrader 4 (MT4) dan MetaTrader 5 (MT5)**, kita akan menggunakan bahasa **MQL4/MQL5**. Robot ini akan:  
 
 1. **Entry Buy** saat MA5 melintasi MA9 dari bawah ke atas.  
 2. **Exit Buy** saat MA5 melintasi MA9 dari atas ke bawah.  
@@ -290,3 +290,5 @@ Dengan mengikuti langkah-langkah di atas, **robot trading otomatis akan bekerja 
 Anda bisa mengoptimalkan strategi ini dengan **pengujian backtest** dan **menyesuaikan setting** sesuai preferensi trading Anda.  
 
 🚀 **Selamat trading dengan EA XAU/USD MA Crossover!**
+
+🚀 **Robot ini ditulis oleh Didit Farafat**
